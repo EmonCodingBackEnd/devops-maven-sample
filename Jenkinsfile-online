@@ -10,11 +10,11 @@ pipeline {
     }
 
     environment {
-        DOCKER_CREDENTIAL_ID = 'dockerhub-id'
+        DOCKER_CREDENTIAL_ID = 'harbor-id'
         GITHUB_CREDENTIAL_ID = 'github-id'
         KUBECONFIG_CREDENTIAL_ID = 'demo-kubeconfig'
-        REGISTRY = 'registry.cn-hangzhou.aliyuncs.com'
-        DOCKERHUB_NAMESPACE = 'rushing'
+        REGISTRY = '192.168.32.116:30002'
+        DOCKERHUB_NAMESPACE = 'ks-devops-harbor'
         GITHUB_ACCOUNT = 'Rushing0711'
         APP_NAME = 'devops-maven-sample'
     }
